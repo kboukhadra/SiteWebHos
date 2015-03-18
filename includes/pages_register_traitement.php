@@ -32,11 +32,6 @@ else {
     addMessage(1, " Error "," inscription ok mais photo non uploadé ");
 }
 
-/*if(empty($_POST['nom']) ){
-    addMessage(2,"warning","remplir vos champ");
-}
-*/
-
 header('Location: index.php?page=register');
 
 ?>

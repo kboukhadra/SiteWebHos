@@ -13,7 +13,6 @@ session_start();
 afficheMessage();
 unset($_SESSION['messages']);
 ?>
-
 <div class="madivision">
     <form method="post" action="index.php?page=register_traitement_nv" enctype="multipart/form-data">
         <h2>formulaire d'enregistrement</h2>

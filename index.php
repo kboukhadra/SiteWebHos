@@ -1,6 +1,5 @@
 <?php
 require('includes/connection.php');
-include("includes/blocs/menu.php");
 include('includes/function.php') ;
 
 
@@ -8,7 +7,7 @@ if(isset($_GET['page'])) {
     $maPage=$_GET['page'];
 
     switch($maPage ) {
-        case "home" : include("home.php");
+        case "home" : include("pages/home.php");
             break;
 
         case "register" : include("pages/register-nv.php");
@@ -31,15 +30,17 @@ if(isset($_GET['page'])) {
 
         case "AjoutArticle" : include("pages/AjoutArticle.php");
             break ;
+            
+        case "SupArticle"    : include ("pages/SupArticle.php") ;
+            break;
 
     }
 } else {
     $page="index.php";
 }
 
-
-
 include('includes/blocs/header.php') ;
+include("includes/blocs/menu.php");
 afficheMessage();
 include('includes/blocs/footer.php') ;
 
